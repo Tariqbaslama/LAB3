@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>App=>JQUERY</title>
+    <link rel="stylesheet" href="AppJQquery.js">
+  
+</head>
+<body dir="rtl">
+    <form method="get" autocomplete="on">
+        
+    <div class="container">
+
+        <div class="row">
+            <div class="title">
+
+                <h2>استماره تسجيل في دورة صيانة موبايل</h2>
+                           
+            
+            
+            
+            
+            </div>
+        </div>
+        <label for="std_name">اسم الطالب</label>
+        </div>
+
+        <div class="flex-2">
+         <input type="text" required id="std_name">
+
+        </div>
+        <div class="flex-2">
+        <div class="flex-2">
+        <label for="std_name">العمر</label>
+         
+
+        </div>
+        <div class="flex-4">
+            <input type="number" maxlength="2" min="10" required id="std_name">
+        </div>
+        
+
+        </div>
+    
+    <div  class="row">
+        <div class="flex-2">
+            <label >الجنس</label>
+          
+        </div>
+       <div class="flex-4">
+
+
+        <input type="redio" required id="male" name="gender" value="ذكر" checked
+        >
+        <label for="male">ذكر</label>
+        <input type="radio" required id="female" name="gender" value="انثى">
+        <label for="female">انثى</label>
+       </div>
+       <div class="flex-2">
+       <label for="std_image">الصورة الشخصية</label>
+       </div>
+       <div class="flex-4">
+        <input type="file" id="std_image">
+       </div>
+    </div>
+    <div class="row">
+        <div class="flex-2">
+            <label for="std_email">البريد الالكتروني</label>
+
+        </div>
+        <div class="flex-4">
+            <input type="email" required id="std_email" > 
+
+        </div>
+        <div class="flex-2">
+            <label for="std_phone">رقم التلفون</label>
+
+        </div>
+        <div class="flex-4">
+            <input type="tel" maxlength="9" required id="std_phone">
+
+        </div>
+    </div>
+     <div class="row">
+    <div class="flex-2">
+     <label for="std_edu">المؤهل التعليمي</label>
+
+
+    </div>    
+    <div class="flex-4">
+        <input type="text" required id="std_edu" list="list_edu">
+        <datalist id="list_edu">
+          <option value="ثانوي"></option>
+          <option value="بكالاريوس"></option>
+          <option value="ماجستير"></option>
+          <option value="دكتوراه"></option>
+
+
+        </datalist>
+    </div>
+    <div class="flex-2">
+        <label for="std_year">سنه التخرج</label>
+    </div>
+    <div class="flex-4">
+        <select  id="std_year"></select>
+    </div>
+    </div>
+    <div class="row">
+        <div class="flex-2">
+
+            <label for="std_am">الفترة</label>
+
+        </div>
+        <div class="flex-4">
+            <input type="radio" required id="mor" name="std_am" value="صباحا" checked >
+            <label for="mor">صباحا</label>
+            <input type="radio" required id="eve" name="std_am " value="مساءا">
+            <label for="eve">مساءا</label>
+          
+        </div>
+        <div class="flex-2">
+            <label for="std_time">الوقت</label>
+                   
+        </div>
+        <div class="flex-4">
+            <select  id="std_time">
+                <option value="8-10">8-10</option>
+                <option value="10-12">10-12</option>
+
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="flex-12">
+            <input type="submit" value="تسجيل" id="register">
+            <input type="reset" value="الغاء" id="cancel">
+            <button id="edit">تعديل</button>
+            <button id="show">عرض</button>
+            <button id="print">طباعة</button>
+        </div>
+    </div>
+    <div class="row">
+        <table class="tb-reg" cellspacing="0">
+        <thead class="th-head">
+         <tr>
+            <th>الرقم</th>
+            <th>الاسم</th>
+            <th>العمر</th>
+            <th>الجنس</th>
+            <th>البريد الالكتروني</th>
+            <th>التلفون</th>
+            <th>المؤهل التعليمي</th>
+            <th>سنه التخرج</th>
+            <th>الوقت</th>
+            <th></th>
+
+
+         </tr>
+             
+        </thead>
+        <tbody class="tb-body">
+
+        </tbody>    
+        </div>
+    </table>
+
+
+
+
+    </form>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script  src="AppJQquery.js"></script>
+
+</body>
+</html>
